@@ -1,0 +1,120 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "49faad42-e992-47b8-9c8e-be68b5914ec5",
+   "metadata": {},
+   "source": [
+    "# Stacks\n",
+    "A stack is an ordered collection of elements where items are added and removed from the same end, commonly known as the top.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "1dba4113-be67-42e0-97b4-e391e707e9ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unindent does not match any outer indentation level (<string>, line 7)",
+     "output_type": "error",
+     "traceback": [
+      "  \u001b[36mFile \u001b[39m\u001b[32m<string>:7\u001b[39m\n\u001b[31m    \u001b[39m\u001b[31mdef push(self, value):\u001b[39m\n                           ^\n\u001b[31mIndentationError\u001b[39m\u001b[31m:\u001b[39m unindent does not match any outer indentation level\n"
+     ]
+    }
+   ],
+   "source": [
+    " # Simplified implementation of Stack (relying on built-ins)\n",
+    "\n",
+    " class Stack:\n",
+    "    def __init__(self):\n",
+    "        self.items = []  # This is a python list\n",
+    "\n",
+    "     def push(self, value): \n",
+    "        self.items.append(value)\n",
+    "     \n",
+    "     def pop(self):\n",
+    "        return self.items.pop()\n",
+    "    \n",
+    "     # Nice to have methods:\n",
+    "    def peek(self):\n",
+    "        return self.items[len(self.items)-1]\n",
+    "        \n",
+    "    def is_empty(self):\n",
+    "        return self.items == []\n",
+    "    \n",
+    "     def size(self):\n",
+    "        return len(self.items)\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "9d48f065-ec96-4bff-aa49-b56d0567aaae",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (2481209860.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "  \u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[4]\u001b[39m\u001b[32m, line 3\u001b[39m\n\u001b[31m    \u001b[39m\u001b[31mCreate a function called 'invert_str' that receives a string as a parameter and returns it in inverted order as a result.\u001b[39m\n           ^\n\u001b[31mSyntaxError\u001b[39m\u001b[31m:\u001b[39m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Problem 1\n",
+    "\n",
+    "Create a function called 'invert_str' that receives a string as a parameter and returns it in inverted order as a result.\n",
+    "\n",
+    "## Examples\n",
+    "\n",
+    "rafael-> leadar\n",
+    "earth -> htrae\n",
+    "hello -> olleh\n",
+    "world -> dlrow\n",
+    "\n",
+    "Acceptance Criteria\n",
+    " 1. Your final solution absolutely must make use of the stack class above.\n",
+    " 2. You should, at a minimum, be able to present a design for your solution (pseudocode recommended, but you can use flowcharts).\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0c3bfd0c-0b1e-4851-a361-2a3bfa6dd868",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "function str(invert_str):\n",
+    "\n",
+    "class Stack:\n",
+    "    "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
